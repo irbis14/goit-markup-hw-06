@@ -571,8 +571,55 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close class="btn-modal" title="button">
-          <img src="./image/logo/close.svg" alt="&#10006;" width="11px" />
+          <svg class="btn-modal-svg">
+            <use href="./image/logo/sprite.svg#close"></use>
+          </svg>
         </button>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form class="form">
+          <ul class="list form-list">
+            <li class="form-items">
+              <label class="form-lable" for="name">Имя</label>
+              <input class="form-input" type="text" name="name" id="name" />
+              <svg class="form-input-svg">
+                <use href="./image/logo/sprite.svg#person"></use>
+              </svg>
+            </li>
+            <li class="form-items">
+              <label class="form-lable" for="tel">Телефон</label>
+              <input class="form-input" type="tel" name="name" id="tel" />
+              <svg class="form-input-svg">
+                <use href="./image/logo/sprite.svg#phone"></use>
+              </svg>
+            </li>
+            <li class="form-items">
+              <label class="form-lable" for="mail">Почта</label>
+              <input class="form-input" type="mail" name="mail" id="mail" />
+              <svg class="form-input-svg">
+                <use href="./image/logo/sprite.svg#email"></use>
+              </svg>
+            </li>
+            <li class="form-items">
+              <label class="form-lable" for="comment">Комментарий</label>
+              <textarea
+                class="form-comment"
+                name="comment"
+                id="comment"
+                rows="3.5"
+                placeholder="Введите текст"
+              ></textarea>
+            </li>
+            <li class="form-items">
+              <div class="policy">
+                <input type="checkbox" name="policy" id="policy" />
+                <label for="policy">Соглашаюсь с рассылкой и принимаю </label>
+                <a class="link-policy" href="#">Условия договора</a>
+              </div>
+            </li>
+            <li class="form-items"></li>
+            <button class="subscribe-btn" type="submit">Отправить</button>
+          </ul>
+        </form>
       </div>
     </div>
 
